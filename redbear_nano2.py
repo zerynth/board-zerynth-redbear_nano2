@@ -15,11 +15,12 @@ class RedBearNano2(Board):
         pass
 
     def burn(self,bin,outfn=None):
-        fname = fs.get_tempfile(bin)
-        if not self.disk:
-            return False,"Can't find device disk! Have you mounted the DAP Link device?"
-        fs.copyfile2(fname,fs.path(self.disk,"redbear.bin"))
-        fs.del_tempfile(fname)
-        # wait some time to allow virtualization
-        time.sleep(15/256*(len(bin)/1024))
-        return True,"Ok"
+        fatal("Mass storage burning is unreliable! Please use jtag...")
+        # fname = fs.get_tempfile(bin)
+        # if not self.disk:
+        #     return False,"Can't find device disk! Have you mounted the DAP Link device?"
+        # fs.copyfile2(fname,fs.path(self.disk,"redbear.bin"))
+        # fs.del_tempfile(fname)
+        # # wait some time to allow virtualization
+        # time.sleep(15/256*(len(bin)/1024))
+        # return True,"Ok"

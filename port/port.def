@@ -2,7 +2,7 @@
 
 ////LAYOUT: redbear_nano2
 ////PERIPHERALS: SERIAL0 ADC0 PWMD0 ICUD0 SPI0 I2C0
-////CDEFINES: NRF52
+////CDEFINES: NRF52832_XXAA NRF52_SD_132
 
 const PinInfo const _vhalpinmap[] STORED = {
     /* D0   */ MAKE_PIN(PA, 30,  HAS_EXT | HAS_ADC | HAS_PWM | HAS_SER | HAS_SPI),
