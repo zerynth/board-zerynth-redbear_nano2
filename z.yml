@@ -1,0 +1,15 @@
+---
+description: Add support for RedBear Nano 2
+fullname: board.zerynth.redbear_nano2
+info:
+    board: Redbear Nano BLE 2
+    chip_manufacturer: Nordic
+    device: nrf52832
+    family_type: ARM Cortex M4
+keywords:
+- redbear
+- ble
+- nordic
+- nfc
+title: RedBear Nano 2 Support Package
+...
