@@ -1,21 +1,43 @@
 {
-    "name":"RedBear Nano 2",
-    "target":"redbear_nano2",
-    "cc":"armgcc",
-    "classes":["redbear_nano2.RedBearNano2"],
-    "ram":64,
-    "flash":512,
-    "family_type":"armcmx",
-    "family_name":"nrf52",
-    "chip_model":"NRF52832",
+    "name": "RedBear Nano 2",
+    "target": "redbear_nano2",
+    "cc": "armgcc",
+    "classes": [
+        "redbear_nano2.RedBearNano2"
+    ],
+    "ram": 64,
+    "flash": 512,
+    "family_type": "armcmx",
+    "family_name": "nrf52",
+    "chip_model": "NRF52832",
     "manual_reset": 1,
-    "preferred_baud":115200,
-    "board_producer":"RedBear",
-    "chip_manifacturer":"Nordic",
-    "architecture":"cortex-m4f",
-    "gccopts":{
-        "arch":["-mcpu=cortex-m4","-mthumb","-mfloat-abi=hard", "-mfpu=fpv4-sp-d16", "-mabi=aapcs"],
-        "cflags": ["-mcpu=cortex-m4","-mthumb", "-Os","-fomit-frame-pointer","-falign-functions=16","-ffunction-sections", "-fdata-sections", "-fno-common", "-Wall", "-Wextra", "-Wstrict-prototypes","-nostdlib","-std=c99"],
+    "preferred_baud": 115200,
+    "board_producer": "RedBear",
+    "chip_manifacturer": "Nordic",
+    "architecture": "cortex-m4f",
+    "gccopts": {
+        "arch": [
+            "-mcpu=cortex-m4",
+            "-mthumb",
+            "-mfloat-abi=hard",
+            "-mfpu=fpv4-sp-d16",
+            "-mabi=aapcs"
+        ],
+        "cflags": [
+            "-mcpu=cortex-m4",
+            "-mthumb",
+            "-Os",
+            "-fomit-frame-pointer",
+            "-falign-functions=16",
+            "-ffunction-sections",
+            "-fdata-sections",
+            "-fno-common",
+            "-Wall",
+            "-Wextra",
+            "-Wstrict-prototypes",
+            "-nostdlib",
+            "-std=c99"
+        ],
         "defs": [
             "VM_DEFAULT_THREAD_SIZE=2048",
             "BOARD_PCA10040",
@@ -32,36 +54,36 @@
             "MCU_FIXED_VTOR"
         ]
     },
-    "relocator":"cortex-m",
-    "type":"board",
-    "virtualizable":"RedBearNano2",
-    "vm_mini_chunk":64,
+    "relocator": "cortex-m",
+    "type": "board",
+    "virtualizable": "RedBearNano2",
+    "vm_mini_chunk": 64,
     "uplink_reset": true,
     "reset_time": 3000,
-    "has_alter_ego":false,
-    "jtag_target":"board/nordic_nrf52_dk.cfg",
+    "has_alter_ego": false,
+    "jtag_target": "board/nordic_nrf52_dk.cfg",
     "jtag_capable": 2,
-    "jtag_class":"RedBearNano2",
+    "jtag_class": "RedBearNano2",
     "jtag_chipid_command": "reset halt; mdw 0x10000060; mdw 0x10000064",
-    "jtag_chipid_len":2,
-    "jtag_chipid_prefix":"0x100000",
-    "preferred_uplink_with_jtag":{
-        "probe":"cmsis_dap"
+    "jtag_chipid_len": 2,
+    "jtag_chipid_prefix": "0x100000",
+    "preferred_uplink_with_jtag": {
+        "probe": "cmsis_dap"
     },
-    "preferred_register_with_jtag":{
-        "probe":"cmsis_dap"
+    "preferred_register_with_jtag": {
+        "probe": "cmsis_dap"
     },
-    "preferred_burn_with_jtag":{
-        "probe":"cmsis_dap"
+    "preferred_burn_with_jtag": {
+        "probe": "cmsis_dap"
     },
-    "bytecode_offset":"0x055000",
-    "vmstore_offset":"0x053000",
-    "connection":{
-        "baudrate":115200,
-        "parity":"n",
-        "bytesize":8,
-        "stopbits":1,
-        "dsrdtr":false,
-        "rtscts":false
+    "bytecode_offset": "0x055000",
+    "vmstore_offset": "0x053000",
+    "connection": {
+        "baudrate": 115200,
+        "parity": "n",
+        "bytesize": 8,
+        "stopbits": 1,
+        "dsrdtr": false,
+        "rtscts": false
     }
 }
